@@ -2,12 +2,16 @@
 
 Bool filter that can check complex filters against a full text or (nested) records. You can use it e.g. in web crawlers or UIs to be able to define filters similar to the commands in vs code just by typing. This way there is no need to click may controls.
 
-**State:** Implemented with a little help of Windsurf IDE and Claude AI. I just defined the syntax, the AI did all the implementation (read the [prompt](ai.md)). I will check different filter combinations over time when I use it.
+**State:** Implemented with a little help of Windsurf IDE and Claude AI. I just defined the [syntax](#full-syntax), the AI did all the implementation (read the [prompt](ai.md)). I will check different filter combinations over time when I use it.
 
 ```
 > cd debug_page
 > composer install
 ```
+
+![alt text](misc/01.png)
+
+![alt text](misc/02.png)
 
 
 Samples
