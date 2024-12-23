@@ -15,15 +15,15 @@ Samples
 
 ### Full text
 
-ˋˋˋ
+```
 (("my string" and /some_regex/s) or (string3 and string 4)) and string5
-ˋˋˋ
+```
 
 ### Records
 
-ˋˋˋ
+```
 ((field1 = "my string" and field2 != /some_regex/s) or (field3 in ["string1", "string2"] or nested.field = "string3")) and field4 != "string4"
-ˋˋˋ
+```
 
 
 Full syntax
