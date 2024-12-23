@@ -1,0 +1,9 @@
+{
+  "name": "dools/filter",
+  "description": "A flexible filter parser and checker",
+  "type": "project",
+  "require": {
+    "php": ">=7.4",
+    "symfony/yaml": "^5.4"
+  }
+}
