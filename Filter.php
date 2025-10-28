@@ -132,7 +132,7 @@ class Filter
 
   private function parseOperator(): ?string
   {
-    $operators = ['=', '!=', '>', '<', '>=', '<=', 'in', '!in', 'contains_any', 'contains_all'];
+    $operators = ['=', '!=', '>', '<', '>=', '<=', 'in', '!in', 'contains', 'contains_any', 'contains_all'];
     foreach($operators as $op)
     {
       if(substr($this->filterString, $this->currentPos, strlen($op)) === $op)
@@ -321,6 +321,11 @@ class Filter
         
         case '!in':
           return !in_array($value, $tree['value'], true);
+        
+        case 'contains':
+          if( is_string($value) && is_string($tree['value']) )
+            return stripos($value, $tree['value']) !== false;
+          return false;
         
         case 'contains_any':
           return count(array_intersect($value, $tree['value'])) > 0;

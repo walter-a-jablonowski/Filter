@@ -2,3 +2,4 @@ desktop.ini
 vendor/
 composer.lock
 filter.code-workspace
+test_contains.php

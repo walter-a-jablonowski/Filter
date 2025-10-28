@@ -52,6 +52,7 @@ nested checks are enclosed with ( ), we use "and" "or" for boolean logic
 - greater:           `>`,`<`,`>=`,`<=`
   - we also use this for dates
 - asterix:           `= "some*"` (we prefer = here over "like")
+  - alternative: `field contains "some"`
   - case insesitive: `field = i"some*"`
 - regex:             `... = /some_regex/s`
 
