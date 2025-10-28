@@ -40,18 +40,17 @@ nested checks are enclosed with ( ), we use "and" "or" for boolean logic
   - numbers:         `1` or `1.1`
   - bool:            `true`, `false`
   - date and time:   general format: YYYY-MM-DD HH:mm:ss.000...
-    - date:          date with or without time, with or without seconds and fractions of a second
-    - time:          time only with or without time, with or without seconds and fractions of a second
+    - date:          with or without time, seconds or fractions
+    - time:          with or without seconds, fractions
   - array:           `[ ... ]`
   - null:            `null`
-- case insensitive:  `field = i"string"`, `field != i"string"`
-  - this means that we use case insensitive compare here, default is sensitive
+- case insensitive:  `field = i"string"`, `field != i"string"` (default is sensitive)
 - nested fields:     `nested.field = ...`
 - equal:             `=`, `!=`
   - we use this for `null` as well
   - for full text arg (no fields) use `and ! "my text"` instead of `!=`
 - greater:           `>`,`<`,`>=`,`<=`
-  - we also use for dates
+  - we also use this for dates
 - asterix:           `= "some*"` (we prefer = here over "like")
   - case insesitive: `field = i"some*"`
 - regex:             `... = /some_regex/s`
